@@ -1,12 +1,4 @@
 import React from 'react';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+export default ({ name }) => <h1>Hello {name}!</h1>;
 
-export default App;
