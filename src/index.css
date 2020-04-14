@@ -1,9 +1,7 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"); 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-/* ==========================================================================
-   Responsive images and box padding
-   ========================================================================== */
+
 
 img,
 object {
@@ -28,11 +26,390 @@ body {
   background: #fefefe;
 }
 
-.container {
-  width: 80%;
-  margin: 60px auto;
-}
 h1 {
   font-size: 3em;
   font-weight: 600;
+}
+
+.defaultHero,
+.about {
+  min-height: calc(100vh - 66px);
+  background: url("./images/darkNature.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroAbout,
+.about {
+  min-height: calc(100vh - 66px);
+  background: url("./images/darkNatureUN.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+/* BANNER */
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+}
+.banner div {
+  width: 10rem;
+  height: 5px;
+  margin: 1.7rem auto;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .banner {
+    padding: 2rem 3rem;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner {
+    padding: 2rem 6rem;
+  }
+  .banner h1 {
+    font-size: 4rem;
+  }
+}
+
+/* BANNERABOUT */
+.bannerAbout {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  width: 1000px;
+  height: 500px;
+}
+.bannerAbout h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.bannerAbout div {
+  width: 10rem;
+  height: 5px;
+  margin: 1.7rem auto;
+}
+.bannerAbout p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-family: Arial;
+  text-transform: lowercase;
+}
+.colorAfter {
+  background: pink;
+}
+@media screen and (min-width: 576px) {
+  .bannerAbout {
+    padding: 2rem 3rem;
+  }
+  .bannerAbout h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bannerAbout {
+    padding: 2rem 6rem;
+  }
+  .bannerAbout h1 {
+    font-size: 4rem;
+  }
+}
+
+/* BUTTON */
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: darkblue;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: pink;
+}
+
+/* WHYME-TITLE */
+.whyMe-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 10px;
+  color: white;
+}
+.whyMe-title h4 {
+  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.whyMe-title div {
+  width: 5rem;
+  height: 5px;
+  margin: 0 auto;
+  background:darkblue;
+}
+
+/* WHY-SECTION */
+.whyMe {
+  padding: 5rem 0;
+  color: white;
+  text-align: center;
+  background: black;
+
+}
+
+.whyMe-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+.whyMe span {
+  display: inline-block;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.whyMe h6 {
+  letter-spacing: var(--mainSpacing);
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border-bottom: 1px solid pink;
+  border-style: groove;
+}
+.whyMe p {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  .whyMe-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .whyMe p {
+    width: 100%;
+  }
+}
+
+.contact {
+  border-top: solid black 10px;
+  background: black;
+  height: 689px;
+  border: white solid 50px;
+}
+
+.allContact {
+  margin-top: 140px
+}
+
+.contact h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  margin-top: 32px;
+  width: 80% auto;
+}
+@media screen and (max-width: 440px) {
+  .contact h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+.contactSub {
+  display: flex;
+  justify-content: center;
+  color: white;
+  /* font-size: 18px */
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.contactSub p {
+  display: flex;
+  align-self: center;
+}
+
+.mail {
+  margin-top: 100px;
+}
+
+.maila {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size:0.7em;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+}
+
+.gitLink {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.bannerProjects {
+  text-align: center;
+  margin-top: 100px;
+  line-height: normal;
+  /* text-decoration: underline; */
+}
+.gitLink-projects {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+
+/* WEATHER APP  */
+
+
+
+.app {
+  background-image: url('./images/winter.jpeg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+.app.warm {
+  background-image: url('./images/summer.jpg');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+.weather-fun {
+  color: rgb(214, 171, 171);
+  font-size: 1em;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.input .search-bar {
+  color: black;
+}
+
+/* .search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+} */
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
