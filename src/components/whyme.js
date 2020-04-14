@@ -9,22 +9,22 @@ export default class whyme extends Component {
             {
                 icons: <FaUser />,
                 title: "ME",
-                info: "My name is Philip, im a Frontend developer from Sweden.",
+                info: "My name is Philip, im a Frontend developer student from Sweden.",
             },
             {
                 icons: <FaFileAlt />,
                 title: "Education",
-                info: "My name is Philip, im a Frontend developer from Sweden."
+                info: "KYH Yrkeshögskola",
             },
             {
                 icons: <FaColumns />,
                 title: "Programming skills",
-                info: "My name is Philip, im a Frontend developer from Sweden."
+                info: "Html, Css, JavaScript, React.Js, Gatsby.Js, Node.Js, TailwindCss, Styled-Components"
             },
             {
                 icons: <FaMicrophone />,
                 title: "Music",
-                info: "My name is Philip, im a Frontend developer from Sweden."
+                info: "I've a degree in music production and audio engineering"
             },
         ]
     }
