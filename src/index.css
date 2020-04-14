@@ -113,7 +113,7 @@ h1 {
 }
 .bannerAbout p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
   font-family: Arial;
   text-transform: lowercase;
@@ -247,6 +247,9 @@ h1 {
   .contact h1 {
     font-size: 2rem;
   }
+  .bannerAbout p {
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -329,7 +332,9 @@ main {
 }
 
 .weather-fun {
-  color: rgb(214, 171, 171);
+  /* color: rgb(214, 171, 171); */
+  color: lightgray; 
+  width: 25%;
   font-size: 1em;
 }
 
