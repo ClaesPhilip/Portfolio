@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 
 
+
 const Contact = () => (
     <Fragment>
         <div className="contact">
